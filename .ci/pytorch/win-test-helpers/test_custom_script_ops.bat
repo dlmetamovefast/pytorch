@@ -1,6 +1,7 @@
 call %SCRIPT_HELPERS_DIR%\setup_pytorch_env.bat
 
 git submodule update --init --recursive third_party/pybind11
+git submodule update --init --recursive third_party/NVTX
 cd test\custom_operator
 
 :: Build the custom operator library.
